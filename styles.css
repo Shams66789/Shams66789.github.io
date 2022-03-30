@@ -15,6 +15,7 @@
 .navbar{
   position: fixed;
   width: 100%;
+  padding: 30px 0;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
 }
@@ -32,7 +33,7 @@
 
 .navbar .logo a{
   color: rgb(190, 214, 241);
-  font-size: 33px;
+  font-size: 35px;
   font-weight: 600;
 }
 
