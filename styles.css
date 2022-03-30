@@ -15,9 +15,13 @@
 .navbar{
   position: fixed;
   width: 100%;
-  padding: 15px 0;
-  background: rgb(51, 226, 226);
   font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+  padding: 15px 0;
+  background: rgb(4, 94, 129);
 }
 
 .navbar .max-width{
@@ -27,9 +31,13 @@
 }
 
 .navbar .logo a{
-  color: blue;
+  color: rgb(190, 214, 241);
   font-size: 33px;
   font-weight: 600;
+}
+
+.navbar .logo a span{
+  color: cyan;
 }
 
 .navbar .menu li{
@@ -38,15 +46,20 @@
 }
 
 .navbar .menu li a{
-  color: blue;
+  color: rgb(207, 207, 248);
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+  color: rgb(21, 230, 230);
 }
 
 .home{
   display: flex;
-  background: url("images/background-image1.jpg") no-repeat center;
+  background: url("images/background_image.jpg") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
