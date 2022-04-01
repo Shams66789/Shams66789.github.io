@@ -176,7 +176,7 @@ section .title::after{
 }*/
 .about .title::after{
     content: "who I am";
-  }
+}
 .about .about-content{
     display: flex;
     flex-wrap: wrap;
@@ -242,12 +242,15 @@ section .title::after{
     background: rgb(255, 255, 255);
     color: black;
 }
-.contact .text{
+.contact .title::after{
+  content: "Get in touch";
+}
+/*.contact .text{
     font-size: 20px;
     padding-bottom: 30px;
     margin-bottom: 20px;
     font-weight: 600;
-}
+}*/
 .contact i{
     font-size: 30px;
 }
