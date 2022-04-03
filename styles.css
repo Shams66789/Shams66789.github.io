@@ -233,6 +233,8 @@ section .title::after{
 }
 .skills .skill-heading, .skills .skill-icon{
     display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
     justify-content: space-between;
     padding-left: 65px;
     margin-bottom: 45px;
