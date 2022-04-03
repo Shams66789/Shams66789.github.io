@@ -14,6 +14,8 @@
     padding: 0 80px;
     margin: auto;
 }
+
+/* Navigation bar styling*/
 .navbar{
     position: fixed;
     width: 100%;
@@ -72,10 +74,10 @@
 }
 
 
-/* Next Part */
+/* home page styling*/
 .home{
     display: flex;
-    background: url(pexels-hasan-albari-122986145654765.jpg) no-repeat center;
+    background: url(images/Background_image.jpg) no-repeat center;
     height: 100vh;
     /* width: 100%; */
     color: whitesmoke;
@@ -104,7 +106,7 @@
     font-weight: 500;
 }
 
-/* About styling  */
+/* Common styling part*/
 section{
     padding: 100px 0;
 }
@@ -139,6 +141,8 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
   }
+
+  /* About page styling*/
 .about{
     font-family: 'Poppins', sans-serif;
 }
@@ -220,6 +224,8 @@ section .title::after{
     background: none;
     color: crimson;
 }
+
+/* Skill page styling*/
 .skills{
     font-family: 'Poppins', sans-serif;
     background: rgb(226, 246, 255);
@@ -239,6 +245,70 @@ section .title::after{
     padding-left: 65px;
     margin-bottom: 45px;
 }
+
+/* Project page styling*/
+.project{
+    font-family: 'Poppins', sans-serif;
+    background: whitesmoke;
+    color: black
+}
+
+.project .project-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .project-content .left{
+    width: 52%;
+}
+
+.project .project-content .left .text-1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.project .project-content .left .text-2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.project .project-content .left p{
+    font-style: oblique;
+}
+
+.project .project-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 174px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.project .project-content .left a:hover{
+    background: none;
+    color: crimson;
+}
+
+.project .project-content .right{
+    width: 40%;
+}
+.project .project-content .right img{
+    height: 650px;
+    width: 320px;
+    object-fit: fill;
+    border-radius: 0;
+}
+
+/* Contact page styling*/
 .contact{
     font-family: 'Poppins', sans-serif;
     background: rgb(255, 255, 255);
@@ -270,7 +340,7 @@ section .title::after{
     padding-left: 52px;
 }
 
-/* responsive  */
+/* responsive  section*/
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
@@ -338,7 +408,25 @@ section .title::after{
     }
     .about .about-content .right{
         flex: 100%;
-    }   
+    }
+
+    .project .project .columns{
+        width: 50%;
+        height: -30px;
+    }
+    .project .project-content .right img{
+        height: 450px;
+        width: 230px;
+    }
+    .project .project-content .right{
+        display: flex;
+        justify-content: center;
+        margin: 70px auto 0;
+        
+    }
+    .project .project-content .left{
+        flex: 100%;
+    }
 }
 @media (max-width: 575px) {
     .max-width{
