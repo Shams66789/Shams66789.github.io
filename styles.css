@@ -303,7 +303,7 @@ section .title::after{
 }
 .project .project-content .right img{
     height: 650px;
-    width: 320px;
+    width: 280px;
     object-fit: fill;
     border-radius: 0;
 }
@@ -415,7 +415,7 @@ section .title::after{
         height: -30px;
     }
     .project .project-content .right img{
-        height: 450px;
+        height: 350px;
         width: 230px;
     }
     .project .project-content .right{
