@@ -51,6 +51,7 @@
     display: inline-block;
 }
 .navbar .menu li a{
+    display: block;
     color: rgb(207, 207, 248);
     font-size: 18px;
     font-weight: 500;
