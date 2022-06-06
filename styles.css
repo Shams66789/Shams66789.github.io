@@ -309,6 +309,41 @@ section .title::after{
     border-radius: 0;
 }
 
+/* Achievents page styling*/
+.Achievement{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+.Achievement .Achievement-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.Achievement .Achievement-content .left{
+    width: 50%;
+}
+.Achievement .Achievement-content .left img{
+    height: 350px;
+    width: 500px;
+    object-fit: fill;
+    border-radius: 6px;
+    border-style: double;
+    border-color: black;
+}
+.Achievement .Achievement-content .right{
+    width: 50%;
+}
+.Achievement .Achievement-content .right .text-4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.Achievement .Achievement-content .right p{
+    font-size: 17px;
+    font-style: oblique;
+}
+
 /* Contact page styling*/
 .contact{
     font-family: 'Poppins', sans-serif;
@@ -424,6 +459,25 @@ section .title::after{
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
+    }
+}
+@media (max-width: 1170px) {
+    .Achievement .Achievement-content .columns{
+        width: 50%;
+        height: -30px;
+    }
+    .Achievement .Achievement-content .left img{
+        height: 250px;
+        width: 300px;
+    }
+    .Achievement .Achievement-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+        
+    }
+    .Achievement .Achievement-content .right{
+        flex: 100%;
     }
 }
 @media (max-width: 1050px) {
