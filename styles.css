@@ -329,7 +329,6 @@ section .title::after{
     object-fit: fill;
     border-radius: 6px;
     border-style: double;
-    border-color: black;
 }
 .Achievement .Achievement-content .right{
     width: 50%;
@@ -342,6 +341,23 @@ section .title::after{
 .Achievement .Achievement-content .right p{
     font-size: 17px;
     font-style: oblique;
+}
+
+.Achievement .Achievement-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 174px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.Achievement .Achievement-content .right a:hover{
+    background: none;
+    color: crimson;
 }
 
 /* Contact page styling*/
