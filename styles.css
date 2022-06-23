@@ -108,6 +108,10 @@
 }
 
 /* Common styling part*/
+
+li {
+    list-style-type: none;
+}
 section{
     padding: 100px 0;
 }
@@ -147,38 +151,7 @@ section .title::after{
 .about{
     font-family: 'Poppins', sans-serif;
 }
-/*.about .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Gluten';
-}
-.about .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 51%;
-    width: 180px;
-    height: 1px;
-    background: black;
-    transform: translateX(-50%);
-    /* margin-bottom: 10px; 
-}
-.about .title::after{
-    content: "who am i";
-    position: absolute;
-    bottom: -15px;
-    left: 51%;
-    font-size: 20px;
-    color: red;
-    padding: 5px;
-    background: white;
-    transform: translateX(-50%);
-    /* margin-bottom: 10px; 
-}*/
+
 .about .title::after{
     content: "who I am";
 }
@@ -231,21 +204,72 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
     background: rgb(226, 246, 255);
     color: black;
+
 }
 
-.skills .skills-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding-left: 130px;
+    /* align-items: center; */
 }
+
+
+
+
 .skills .skill-heading, .skills .skill-icon{
     display: inline-block;
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
-    justify-content: space-between;
-    padding-left: 65px;
-    margin-bottom: 45px;
 }
+
+.skills li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills .skill-icon img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+@media (max-width : 1192px) {
+    .skills ul {
+        padding-left: 90px;
+    }
+}
+@media (max-width : 950px) {
+    .skills ul {
+        padding-left: 0px;
+    }
+}
+@media (max-width : 768px) {
+    .skills ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width : 440px) {
+    .skills ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .skills li {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+
 
 /* Project page styling*/
 .project{
@@ -585,7 +609,7 @@ section .title::after{
 }
 @media (max-width: 575px) {
     .max-width{
-        padding: 0 23px;
+        padding: 0 16px;
     }
     .home .home-content .text-2{
         font-size: 60px;
