@@ -28,7 +28,8 @@ html{
 
 /* NAV bar styling */
 .navbar{
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     padding: 29px 0;
     /* opacity: 0.5; */
@@ -113,20 +114,14 @@ section .title::before{
     color: whitesmoke;
     min-height: 500px;
 }
-.home .max-width{
-    margin: auto 0 auto 0;
-}
+
 .home .home-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-@media (max-width : 800px) {
-    .home .home-content {
-        flex-direction: column;
-    }
-}
+
 
 /* .home .home-content .right{
     width: 51%;
@@ -170,6 +165,28 @@ section .title::before{
     font-family: 'Inter',sans-serif;
 }
 
+@media (max-width : 992px) {
+    .home .home-content {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .home-content .text-1{
+        font-size: 20px;
+    }
+
+    .home-content .text-2{
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .home-content.text-3{
+        font-size: 16px;
+        margin-top: 0.5rem;
+        line-height: 24px;
+    }
+
+}
+
 .skills ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -188,6 +205,7 @@ section .title::before{
 
 .skills li {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
