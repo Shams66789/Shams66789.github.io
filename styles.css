@@ -89,6 +89,7 @@ section{
 section .title{
     position: relative;
     text-align: left;
+    color: #FFFFFF;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
@@ -188,23 +189,25 @@ section .title::before{
 }
 
 .skills ul {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 40px;
-    padding-left: 130px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    row-gap: 50px;
 }
 
 
 .skills .skill-heading, .skills .skill-icon{
     display: inline-block;
     font-weight: 400;
+    color: #FFFFFF;
     font-family: 'Mohave', sans-serif;
     font-size: 25px;
 }
 
 .skills li {
     display: flex;
+    width: 230px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -231,22 +234,14 @@ section .title::before{
 }
 @media (max-width : 768px) {
     .skills ul {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
+        row-gap: 40px;
 
-@media (max-width : 440px) {
-    .skills ul {
-        display: flex;
-        flex-direction: column;
-        
     }
+    .skills .skill-heading, .skills .skill-icon{
+        font-size: 20px;
+    }
+    .skills li{
+        width: 46%;
 
-    .skills li {
-        margin-top: 25px;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
     }
 }
