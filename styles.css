@@ -81,7 +81,7 @@ html{
     display: none;
 }
 
-@media (max-width: 957px) {
+@media (max-width: 980px) {
     .menu-btn{
         display: block;
         color: aliceblue;
@@ -208,6 +208,9 @@ section .title::before{
 }
 
 @media (max-width : 992px) {
+    .home{
+        height: 150vh;
+    }
     .home .home-content {
         flex-direction: column;
         row-gap: 50px;
@@ -297,3 +300,29 @@ section .title::before{
 .project .title::before{
     left: 390px;
 }
+
+.project .project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .project .project-content .left{
+    width: 40%;
+} */
+.project .project-content .left img{
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width : 768px) {
+    .project .title::before{
+        left: 310px;
+    }
+}
+
+
+
+
+
