@@ -132,17 +132,37 @@ section .title{
     padding-bottom: 20px;
   }
   
-section .title::before{
-    content: "";
+  section .title::before{
+      content: "";
     position: absolute;
     top: 39%;
     width: 240px;
     height: 0.5px;
     background: #676767;
     transform: translateX(-90%);
-  }
+}
 
-  @media (max-width : 768px) {
+.button{
+    display: inline-block;
+    background: linear-gradient(45deg,#794BDB, #42BCE2B2);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 30px;
+    border-radius: 174px;
+    color: #FFFFFF;
+}
+
+.clickable{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+@media (max-width : 768px) {
     section .title::before{
         width: 160px;
     }
@@ -303,18 +323,65 @@ section .title::before{
 
 .project .project-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin-bottom: 140px;
 }
 
-/* .project .project-content .left{
-    width: 40%;
-} */
+.project .project-content .left{
+    width: 50%;
+}
 .project .project-content .left img{
-    height: 550px;
+    height: 500px;
     width: 100%;
     object-fit: contain;
+    align-items: center;
 }
+
+.project .project-content .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: top;
+    width: 40%;
+    
+}
+
+.project .project-content .right img {
+    /* position: absolute; */
+    float: right;
+    margin-bottom: 64px;
+    /* object-fit: contain; */
+}
+
+.project .project-content h2{
+    color: #CD7AFF;
+    font-weight: 600;
+    font-family: 'Mohave', sans-serif;
+    font-size: 37px;
+    margin-bottom: 14px;
+}
+
+.project .project-content p{
+    color: #DDDDDD;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 36px;
+}
+
+.project .project-content .project-links {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+
+.project .project-all{
+    margin-left: 40%;
+}
+
+
 
 @media (max-width : 768px) {
     .project .title::before{
