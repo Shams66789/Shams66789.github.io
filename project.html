@@ -8,19 +8,19 @@
     <script src="https://kit.fontawesome.com/b9bb972247.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <!--Navigation bar Section-->
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="index.html">Shams's <span>Portfolio.</span></a></div>
             <ul class="menu">
                 <li><a href="index.html" class="menu-btn">Home</a></li>
                 <li><a href="about.html" class="menu-btn">About</a></li>
-                <li><a href="skills.html" class="menu-btn">Skills</a></li>
-                <li><a href="#project" class="menu-btn">Project</a></li>
-                <li><a href="Achievement.html" class="menu-btn">Achievement</a></li>
-                <li><a href="contact.html" class="menu-btn">Contact</a></li>
+                <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="project.html" class="menu-btn">Project</a></li>
+                <li><a href="Achievement.html" class="menu-btn">Resume</a></li>
+                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -28,37 +28,47 @@
         </div>
     </nav>
 
-    <!--Project Section-->
-    <section class="project" id="project">
+    <Section class="project" id="project">
         <div class="max-width">
-            <h2 class="title">Projects</h2>
+            <h2 class="title">PROJECTS</h2>
             <div class="project-content">
                 <div class="column left">
-                    <h2 class="text-1">AudiTune Music Player</h2>
-                    <h3 class="text-2">Android Development</h3>
-                    <p> <strong>AudiTune</strong> App is a Music player app developed using 
-                        <strong>native android</strong>(Java). 
-                        AudiTune will search for all the audio mp3 files in your android device and list 
-                        them for you to play anyone of them.
-                    </p>
-                    <p>To view the project resource file, please visit my GitHub repository.</p>
-                    <a href="Data/AudiTune.apk" download="">Download Apk</a>
-                    <a href="https://github.com/Shams66789/AudiTune">Source Code</a>
+                   <figure class="project-img-wrapper">
+                        <img src="images/contact_screen1.jpg" alt="">
+                   </figure>
                 </div>
-               <div class="column right">
-                    <img class="mySlides" src="images/music_icon_round.png" style="width:70%;height:70%">
-                    <img class="mySlides" src="images/permission_page.jpeg" style="width:100%">
-                    <img class="mySlides" src="images/home_page.jpeg" style="width:100%">
-                    <img class="mySlides" src="images/main_page.jpeg" style="width:100%">
-                    <img class="mySlides" src="images/main_page_2.jpeg" style="width:100%">
+                <div class="column right">
+                    <h2>Contact App</h2>
+                    <p>This application, as its name implies, stores contact details such as names, phone numbers, email addresses, and profile images.
+                        In addition to saving contacts, it provides the functionality to initiate a call by swiping right. Users can also search for contacts and retrieve real-time contact information.</p>
+                    <div class="project-links">
+                        <a class="button" href="apks/Contact_App.apk" download="">Download Apk</a>
+                        <a class="clickable" href="">Learn more</a>
+                    </div>
                 </div>
             </div>
+
+            <div class="project-content">
+                <div class="column left">
+                    <h2>AudiTune Music Player</h2>
+                    <p>Music player app developed using native android(Java). AudiTune will search for all the audio mp3 files in your android device and list them for you to play anyone of them.</p>
+                    <div class="project-links">
+                        <a class="button" href="Data/AudiTune.apk" download="">Download Apk</a>
+                        <a class="clickable" href="Data/AudiTune.apk">Learn more</a>
+                    </div>
+                </div>
+                <div class="column right">
+                   <figure class="project-img-wrapper">
+                        <img src="images/Splash_SCREEN.jpg" alt="">
+                    </figure>
+                </div>
+               
+            </div>
         </div>
-    </section>
+    </Section>
 
     <footer>
-        <span><span class="far fa-copyright">MdShamsTabrejAnsari 2022</span></span>
+        <span><span class="far fa-copyright"> Designed with ❤️ by Shams, 2024 </span></span>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

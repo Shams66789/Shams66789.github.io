@@ -20,7 +20,7 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="project.html" class="menu-btn">Project</a></li>
                 <li><a href="Achievement.html" class="menu-btn">Resume</a></li>
-                <li><a href="contact.html" class="menu-btn">Contact</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -37,7 +37,7 @@
                     <div class="text-3">I build android apps that are fast, beautiful and scalable from scratch to production.</div>
                 </div>
                 <div class="column right">
-                    <img src="images/back-2.png" alt="">
+                    <img src="images/background.png" alt="">
                 </div>
             </div>
             <div class="bottom-navigation">
@@ -89,10 +89,23 @@
             <h2 class="title">PROJECTS</h2>
             <div class="project-content">
                 <div class="column left">
-                    <img src="images/Splash_Screen.png" alt="">
+                   <figure class="project-img-wrapper">
+                        <img src="images/contact_screen1.jpg" alt="">
+                   </figure>
                 </div>
                 <div class="column right">
-                    <img src="assets/Group 14.svg" alt="">
+                    <h2>Contact App</h2>
+                    <p>This application, as its name implies, stores contact details such as names, phone numbers, email addresses, and profile images.
+                        In addition to saving contacts, it provides the functionality to initiate a call by swiping right. Users can also search for contacts and retrieve real-time contact information.</p>
+                    <div class="project-links">
+                        <a class="button" href="apks/Contact_App.apk" download="">Download Apk</a>
+                        <a class="clickable" href="">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="column left">
                     <h2>AudiTune Music Player</h2>
                     <p>Music player app developed using native android(Java). AudiTune will search for all the audio mp3 files in your android device and list them for you to play anyone of them.</p>
                     <div class="project-links">
@@ -100,36 +113,12 @@
                         <a class="clickable" href="Data/AudiTune.apk">Learn more</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="project-content">
                 <div class="column right">
-                    <img src="assets/Group 15.svg" alt="">
-                    <h2>Portfolio Website</h2>
-                    <p>Portfolio website is a personal portfolio website template where user can showcase their strengths in a beautiful way.</p>
-                    <div class="project-links">
-                        <a class="button" href="Data/AudiTune.apk" download="">Download Apk</a>
-                        <a class="clickable" href="Data/AudiTune.apk">Learn more</a>
-                    </div>
+                   <figure class="project-img-wrapper">
+                        <img src="images/Splash_SCREEN.jpg" alt="">
+                    </figure>
                 </div>
-                <div class="column left">
-                    <img src="images/home_screen.png" alt="">
-                </div>
-            </div>
-
-            <div class="project-content">
-                <div class="column left">
-                    <img src="images/Splash_Screen.png" alt="">
-                </div>
-                <div class="column right">
-                    <img src="assets/Group 20.svg" alt="">
-                    <h2>AudiTune Music Player</h2>
-                    <p>Music player app developed using native android(Java). AudiTune will search for all the audio mp3 files in your android device and list them for you to play anyone of them.</p>
-                    <div class="project-links">
-                        <a class="button" href="Data/AudiTune.apk" download="">Download Apk</a>
-                        <a class="clickable" href="Data/AudiTune.apk">Learn more</a>
-                    </div>
-                </div>
+               
             </div>
             <div class="project-all">
                 <a class="button" href="">See All Projects</a>
@@ -141,22 +130,47 @@
 
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact</h2>
+            <div class="contact-header">
+                <h2>Contact</h2>
+                <div class="socials">
+                    <a href="https://twitter.com/MdShamsTabrejA4">
+                        <img src="assets/twitter.svg" href="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/md-shams-tabrej-ansari-855449193/">
+                        <img src="assets/Group 25.svg" href="">
+                    </a>
+                    <a href="https://github.com/Shams66789">
+                        <img src="assets/Group 26.svg" href="">
+                    </a>
+                   
+                    
+                    
+                </div>
+            </div>
             <div class="contact-content">
-                <div class="column-left">
-                    <form class="form-container">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
-                        <textarea name="message" placeholder="Message"></textarea>
-                    </form>
-                    <div class="button">Submit</div>
-                </div>
+                <form class="form-container" action="https://api.web3forms.com/submit" method="POST">
 
-                <div class="column-right">
-                    <img src="assets/twitter.svg" href="">
-                    <img src="assets/Group 25.svg" href="">
-                    <img src="assets/Group 26.svg" href="">
-                </div>
+                    <input type="hidden" name="access_key" value="747c9b07-1e2d-43de-bc9b-1284d8456174">
+                    <input type="hidden" name="from_name" value="Website">
+
+                    <div class="input-wrapper">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="Subject">Subject</label>
+                        <input type="text" name="subject" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message">Message</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form> 
             </div>
 
         </div>
