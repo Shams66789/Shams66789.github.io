@@ -26,7 +26,3 @@ $(document).ready(function(){
 //   x[myIndex-1].style.display = "block";  
 //   setTimeout(carousel, 2500);    
 // }
-
-function goToSection() {
-    window.location.hash = "skills";
-}
