@@ -58,10 +58,7 @@ img {
     font-weight: 400;
     font-family: 'Inter', sans-serif;
 }
-.navbar .logo a span{
-    color: cyan;
-    transition: all 0.3s ease;
-}
+
 .navbar .menu li {
     list-style: none;
     /* font-weight: 400; */
@@ -76,7 +73,7 @@ img {
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(28, 92, 99);
+    color: #0ef;
 }
 
 .menu-btn{
@@ -304,9 +301,9 @@ section .title{
     width: 40px;
     height: 40px;
     object-fit: cover;
-    background-image: linear-gradient(45deg,#794BDB, #42BCE2DB);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background-image: linear-gradient(45deg,#794BDB, #42BCE2DB);
+    -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
 
 @media (max-width : 1192px) {
@@ -553,7 +550,6 @@ footer{
     text-align: center;
 }
 
-
 .title_page {
     font-size: 60px;
     color: #FFFFFF;
@@ -563,4 +559,42 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* About Page */
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    gap: 80px;
+
+}
+
+.about .about-content .left{
+    width: 50%;
+}
+
+
+.about .about-content .right, .project .project-content .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: top;
+    width: 50%;
+}
+
+.about .about-content .left img {
+    width: 500px;
+    height: 500px;
+}
+
+.about .about-content .right h2 {
+    color: #CD7AFF;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 37px;
+    margin-bottom: 14px;
 }
