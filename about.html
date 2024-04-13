@@ -10,54 +10,100 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/b9bb972247.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!--Navigation bar Section-->
     <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="index.html"><img src="assets/Group 51.svg" alt=""></a></div>
-            <ul class="menu">
-                <li><a href="index.html" class="menu-btn">Home</a></li>
-                <li><a href="about.html" class="menu-btn">About</a></li>
-                <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
-                <li><a href="project.html" class="menu-btn">Project</a></li>
-                <li><a href="data/Md Shams Tabrej Ansari 3.pdf" download class="menu-btn">Resume</a></li>
-                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>  
-        </div>
-    </nav>
+      <div class="max-width">
+          <div class="logo"><a href="index.html"><img src="assets/Group 51.svg" alt=""></a></div>
+          <ul class="menu">
+              <li><a href="index.html" class="menu-btn">Home</a></li>
+              <li><a href="about.html" class="menu-btn">About</a></li>
+              <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+              <li><a href="project.html" class="menu-btn">Project</a></li>
+              <li><a href="data/Md Shams Tabrej Ansari 3.pdf" download class="menu-btn">Resume</a></li>
+              <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+          </ul>
+          <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+          </div>  
+      </div>
+  </nav>
 
     <!--About Section-->
     <section class="about" id="about">
         <div class="max-width">
-            <h1 class="title_page">About Me</h1>
+            <h1 class="title_page">ABOUT ME</h1>
             <div class="about-content">
-                <div>
-                    <div class="column left">
-                        <img src="images/about_profile.jpg" alt="">
+                <div class="left-wrapper">
+                  <div>
+                    <img class="profile-pic" src="images/about_profile.jpg" alt="">
+                  </div>
+                  <div  class="about-info">
+                    <p>
+                      I am <span> Md Shams Tabrej Ansari</span>, I recently graduated from Siliguri Institute of Technology with a B.Tech degree in Information Technology.
+                    </p>
+                  
+                    <p>
+                      Rooted in the vibrant state of West Bengal, India, I am fueled by a fervent passion for Android development and a relentless drive to innovate.
+                    </p>
+  
+                    <div class="about-links">
+                      <a class="button" href="data/Md Shams Tabrej Ansari 3.pdf" download="Shams_CV">Download Resume</a>
                     </div>
-                    <div class="column right">
-                        <h2>Education</h2>
-                        <div class="">
-                            <ul>
-    
-                            </ul>
-                        </div>
-                    </div>
+                    
+                    <p>
+                      Now, I'm excited to start my career in the tech world. I'm looking for opportunities to work with others and build cool
+                      stuff together.
+                    </p>
+                    <h5>Let’s Build something together...</h5>
+                  </div>
+
                 </div>
+
+                <article class="education">
+                  <h2>Education</h2>
+                  <div class="">
+                    <ul>
+                      <li>
+                        <div class="row">
+                          <h5>Siliguri Institute of Technology</h5>
+                          <span><em>2023</em></span>
+                        </div>
+                        <div class="row">
+                          <p> <em>B.Tech in IT</em> </p>
+                          <span class="stat">8.98 CGPA</span>
+                        </div>
+                      </li>
+                
+                      <li>
+                        <div class="row">
+                          <h5>Sunshine Higher secondary <br> School</h5>
+                          <span><em>2019</em></span>
+                        </div>
+                        <div class="row">
+                          <p> <em>ISC (SCIENCE)</em> </p>
+                          <span class="stat">65.83%</span>
+                        </div>
+                      </li>
+                
+                
+                    </ul>
+                  </div>
+                </article>
+                
             </div>
         </div>
     </section>
     
     <footer>
-        <span><span class="far fa-copyright"> Designed with ❤️ by Shams, 2024 </span></span>
+        <span class="far fa-copyright"> 
+          <span class="text">Designed with ❤️ by Shams, 2024</span> </span>
     </footer>
     
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
+
+

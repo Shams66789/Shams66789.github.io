@@ -1,0 +1,37 @@
+/* About Page */
+
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 140px;
+  gap: 80px;
+
+}
+
+.about .about-content .left{
+  width: 50%;
+}
+
+
+.about .about-content .right, .project .project-content .left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: top;
+  width: 50%;
+}
+
+.about .about-content .left img {
+  width: 500px;
+  height: 500px;
+}
+
+.about .about-content .right h2 {
+  color: #CD7AFF;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 37px;
+  margin-bottom: 14px;
+}

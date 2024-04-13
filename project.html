@@ -10,21 +10,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/b9bb972247.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="index.html"><img src="assets/Group 51.svg" alt=""></a></div>
             <ul class="menu">
-                <li><a href="index.html" class="menu-btn">Home</a></li>
+                <!-- <li><a href="index.html" class="menu-btn">Home</a></li> -->
                 <li><a href="about.html" class="menu-btn">About</a></li>
-                <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="project.html" class="menu-btn">Project</a></li>
-                <li><a href="data/Md Shams Tabrej Ansari 3.pdf" download class="menu-btn">Resume</a></li>
-                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+                <li><a href="data/Md Shams Tabrej Ansari 3.pdf" download="Shams_CV" class="menu-btn">Resume</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -32,7 +31,7 @@
         </div>
     </nav>
 
-    <Section class="project" id="project">
+    <section class="project" id="project">
         <div class="max-width">
             <h1 class="title_page">PROJECTS</h1>
             <div class="project-content">
@@ -47,7 +46,7 @@
                         In addition to saving contacts, it provides the functionality to initiate a call by swiping right. Users can also search for contacts and retrieve real-time contact information.</p>
                     <div class="project-links">
                         <a class="button" href="apks/Contact_App.apk" download="">Download Apk</a>
-                        <a class="clickable" href="">Learn more</a>
+                        <a class="clickable" href="/project/contact-app.html">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +58,7 @@
                         Users can easily share Shayari via WhatsApp or other platforms, as well as copy them to the clipboard with just a tap.</p>
                     <div class="project-links">
                         <a class="button" href="apks/Shayari.apk" download="">Download Apk</a>
-                        <a class="clickable" href="">Learn more</a>
+                        <a class="clickable" href="/project/shayri-app.html">Learn more</a>
                     </div>
                 </div>
                 <div class="column right">
@@ -86,10 +85,11 @@
                 </div>
             </div>
         </div>
-    </Section>
+    </section>
 
     <footer>
-        <span><span class="far fa-copyright"> Designed with ❤️ by Shams, 2024 </span></span>
+        <span class="far fa-copyright"> 
+          <span class="text">Designed with ❤️ by Shams, 2024</span> </span>
     </footer>
 </body>
 </html>
