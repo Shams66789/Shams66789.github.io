@@ -770,3 +770,85 @@ footer .text {
     font-size: 14px;
   }
 }
+
+
+.achievements .title::before{
+    left: 450px;
+}
+
+.achievements .achievements-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    gap: 80px;
+
+}
+
+.achievements .achievements-content .left{
+    width: 50%;
+}
+
+
+.achievements .achievements-content .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: top;
+    width: 50%;
+}
+
+
+
+.achievements .achievements-content h2{
+    font-weight: 600;
+    font-family: 'Mohave', sans-serif;
+    font-size: 37px;
+    margin-bottom: 14px;
+     background-image: linear-gradient(45deg,#8d6cd4, #05c5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievements .achievements-content p {
+    color: #DDDDDD;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 28px;
+    line-height: 26px;
+}
+
+.achievements .achievements-content .achievements-links {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+
+
+@media (max-width : 768px) {
+
+    .achievements-content {
+        flex-direction: column;
+    }
+
+    .achievements-content .column.left {
+        width: 100%;
+    }
+
+    .achievements .achievements-content p {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 18px;
+    }
+    .achievements .achievements-content .achievements-links {
+        margin-top: 14px;
+    }
+    .achievements .title::before{
+        left: 370px;
+    }
+    .achievements .achievements-content .achievements-links .button {
+        font-size: 12px;
+    }
+}
