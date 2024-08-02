@@ -173,4 +173,17 @@ section.more-projects {
   .more-projects>h2 {
     font-size: 28px;
   }
+
+  .project-desc .app-links a{
+    display: block;
+    margin-left: 0;
+  }
+
+  .project-desc .app-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
